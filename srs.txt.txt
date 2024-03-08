@@ -1,0 +1,132 @@
+Online study Portal SRS
+
+
+R.1  Account Management
+
+	R.1.1 Login
+
+		Description : User can login by providing email and password.
+		Input : Email,password
+		Output : If email and password correct then user redirect to home           
+			     page else error message print username or password is 
+			     incorrect.
+	R.1.2 Create Account
+
+		Description : User can create account.
+		Input : Name, email, contact_no and password.
+		Output : Success message.
+
+R.2. Playlist Management. 
+
+	R.2.1 Add Video.
+
+		Description : Admin can add video for particular topic.  
+		 Input : Video link.
+		Output : Success message.
+
+	R.2.2. Remove Video.
+
+		Description : Admin can add video for particular topic..
+		Input : Video_Id
+		Output :  Success message.
+
+
+	R.2.3 Replace Video
+
+		Description : Admin can update video for particular topic..
+		Input : Video_Id and link
+		Output :  Success message.
+	
+
+	R.2.4 Watch  Video
+
+		Description : Admin and any logged in user can view video for 
+				particular topic.     
+		Input : Video_Id and link
+		Output : Play Video.
+	
+R.3. Material  Management. 
+
+	R.3.1 . Upload material
+
+		Description : Admin can add material for particular topic.  
+		 Input : Material github link.
+		Output : Success message.
+
+	R.3.2. Remove material.
+
+		Description : Admin can remove material for particular topic..
+		Input : Material link.
+		Output :  Success message.
+
+
+	R.3.3.Read Material.
+
+		Description : Admin and user can view material for particular topic..
+		Input : Material link
+		Output :  Redirect to github..
+	
+R.4.Tutorial  Management 
+
+	R.4.1 Add Tutorial.
+
+		Description :  Admin can add tutorial.			
+		Input : Topic name and description.
+		Output : Success message.
+
+
+	R.4.2 Update Tutorial.
+
+		Description : Admin can update tutorial.
+		Input : Topic name and new description.
+ 		Output :  success message
+
+	R.4.3. Remove Tutorial.
+
+		Description : Admin can remove tutorial.
+		Input : Topic name.
+ 		Output :  success message.
+
+  	R.4.4. Read Tutorial.
+
+		Description : Admin and user can read tutorial.
+		Input : Topic name.
+ 		Output :  Success message.
+		
+
+R.5 Query Management.
+
+	R.5.1. Ask Question.
+
+		Description : Any logged user can asked question.
+		Input : Question.
+		Output : Display uploaded question.
+
+	R.5.2. Answer Question.
+
+		Description : Any logged in user can answer the question.
+		Input : Answer.
+		Output :  Display uploaded answer.
+
+	R.5.3. Delete question.
+
+		Description : Admin can delete question.
+		Input : Question_id.
+		Output :  Success message.
+
+	R.5.4. View Question – Answer.
+
+		Description :  Any one can see the question and  answer.
+		Input : Disscussion button.
+ 		Output : List of Question-Answer
+
+R.6. Search Management.
+
+	Description : Admin and User can search video,material and tutorial of particular topic .
+	Input : Topic name.
+	Output : Appropriate list of option.
+	
+ 
+
+
+   

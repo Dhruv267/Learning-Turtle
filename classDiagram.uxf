@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>791</x>
+      <y>406</y>
+      <w>182</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>Answer
+--
+-questionId:int
+-Answer : string
+-AnswerId : int
+--
+
+addQuestion(Answer : string, questionId:int)
+removeQuestion(AnswerId : int)
+updateQuestion(AnswerId : int)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>777</x>
+      <y>28</y>
+      <w>182</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>User
+--
+-userId : int
+-name : String
+-password : string
+-contact : int
+--
++login ( id:int,password:string )
++logout ( id:int,password:string )
++updateinfo(id:int,password:string)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>315</x>
+      <y>406</y>
+      <w>182</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>Video
+--
+-Video_Id : int
+-Video_Name : string
+-discription : string
+-course_Id : int
+-seq_no : int
+--
+addVideo(Link : string,Course_Id : int)
+removeVideo(Video_Id : int)
+updateVideo(Video_Id : int)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>427</x>
+      <y>119</y>
+      <w>182</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>Course
+--
+-CourseId : int
+-courseName : string
+--
+addCourse(CourseName:string)
+removeCourse(CourseId : int)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>84</x>
+      <y>399</y>
+      <w>182</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>Material
+--
+-materialId : int
+-link : string
+-discription : string
+-course_Id : int
+--
+addMaterial(Link : string,Course_Id : int)
+removeMaterial(materialId : int)
+updateMaterial(materialId : int)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>728</x>
+      <y>210</y>
+      <w>182</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>Questions
+--
+-questionId:int
+-question : string
+-courseId : int
+--
+
+addQuestion(Link : string,Course_Id : int)
+removeQuestion(questionId : int)
+updateQuestion(questionId : int)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>567</x>
+      <y>406</y>
+      <w>182</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>Tutorial
+--
+-Tutorial_Id : int
+-Tutorial_Name : string
+-discription : string
+-course_Id : int
+-seq_no : int
+--
+addTutorial(Link : string,Course_Id : int)
+removeTutorial(Tutorial_Id : int)
+updateTutorial(Tutorial_Id : int)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>224</x>
+      <y>210</y>
+      <w>224</w>
+      <h>203</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1= *
+m2=1
+belongs  to &gt;</panel_attributes>
+    <additional_attributes>10.0;270.0;300.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>560</x>
+      <y>210</y>
+      <w>140</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1= *
+m2=1
+belongs  to &gt;</panel_attributes>
+    <additional_attributes>180.0;280.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>413</x>
+      <y>210</y>
+      <w>126</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1= *
+m2=1
+belongs  to &gt;</panel_attributes>
+    <additional_attributes>10.0;280.0;150.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>602</x>
+      <y>210</y>
+      <w>140</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1= *
+m2=1
+belongs  to &gt;</panel_attributes>
+    <additional_attributes>180.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>602</x>
+      <y>63</y>
+      <w>182</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1= *
+m2= *
+&lt; SUBSCRIBES </panel_attributes>
+    <additional_attributes>240.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>798</x>
+      <y>140</y>
+      <w>49</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1= *
+m2= *
+&lt; asks </panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>945</x>
+      <y>140</y>
+      <w>56</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1= 1
+m2= *
+&lt; posts </panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;380.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>847</x>
+      <y>315</y>
+      <w>56</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1= 1
+m2= *
+&lt; have </panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+</diagram>
